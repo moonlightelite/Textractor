@@ -1,4 +1,4 @@
-Switch to the 'Baidu' branch for the actual dev branch!
+Switch to the 'baidu' branch for the actual dev branch!
 
 # Textractor
 
