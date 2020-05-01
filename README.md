@@ -1,4 +1,17 @@
-# Textractor
+# Textractor - Baidu Fanyi/Translation Edition
+
+![Baidu Fanyi in action](Capture_resize.png)
+
+Added Baidu Fanyi extension. Note that the extension uses Windows named pipe to communicate with [another application](https://github.com/moonlightelite/BaiduTranslator) that does the communication with Baidu Fanyi.
+
+Textractor should be run with [Locale Emulator](https://pooi.moe/Locale-Emulator/) set to Chinese(Simplified), while the target application should be run with the Japanese Locale.
+
+The translation app BaiduTranslator should be run before Textractor to ensure the named pipe is setup. 
+
+If you change the extension To Language setting to something other than eng, when Textractor starts up, you might get an assertion error. Just press ignore. It's not going to affect the app.
+
+##
+Original Textractor README page
 
 ![How it looks](screenshot.png)
 
