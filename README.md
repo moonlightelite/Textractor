@@ -1,4 +1,4 @@
-# Textractor - Baidu Fanyi/Translation Edition
+# Textractor - Baidu Fanyi/Translate Edition
 
 ![Baidu Fanyi in action](Capture_resize.png)
 
