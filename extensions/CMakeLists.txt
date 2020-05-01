@@ -4,6 +4,7 @@ find_qt5(Core Widgets)
 
 cmake_policy(SET CMP0037 OLD)
 
+add_library(Baidu\ Translate MODULE baidutranslate.cpp translatewrapper.cpp network.cpp extensionimpl.cpp)
 add_library(Bing\ Translate MODULE bingtranslate.cpp translatewrapper.cpp network.cpp extensionimpl.cpp)
 add_library(Copy\ to\ Clipboard MODULE copyclipboard.cpp extensionimpl.cpp)
 add_library(DeepL\ Translate MODULE deepltranslate.cpp translatewrapper.cpp network.cpp extensionimpl.cpp)
@@ -19,6 +20,7 @@ add_library(Remove\ 30\ Repeated\ Sentences MODULE removerepeatsentence.cpp exte
 add_library(Replacer MODULE replacer.cpp extensionimpl.cpp)
 add_library(Thread\ Linker MODULE threadlinker.cpp extensionimpl.cpp)
 
+target_precompile_headers(Baidu\ Translate REUSE_FROM pch)
 target_precompile_headers(Bing\ Translate REUSE_FROM pch)
 target_precompile_headers(Copy\ to\ Clipboard REUSE_FROM pch)
 target_precompile_headers(DeepL\ Translate REUSE_FROM pch)
@@ -34,6 +36,7 @@ target_precompile_headers(Remove\ 30\ Repeated\ Sentences REUSE_FROM pch)
 target_precompile_headers(Replacer REUSE_FROM pch)
 target_precompile_headers(Thread\ Linker REUSE_FROM pch)
 
+target_link_libraries(Baidu\ Translate winhttp Qt5::Widgets)
 target_link_libraries(Bing\ Translate winhttp Qt5::Widgets)
 target_link_libraries(DeepL\ Translate winhttp Qt5::Widgets)
 target_link_libraries(Extra\ Window Qt5::Widgets)

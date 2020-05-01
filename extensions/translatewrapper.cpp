@@ -32,6 +32,9 @@ QFormLayout* display;
 QSettings settings = openSettings();
 Synchronized<std::wstring> translateTo = L"en", apiKey;
 
+HANDLE hTranslatorPipe = INVALID_HANDLE_VALUE;
+int messageCount = 0;
+
 Synchronized<std::map<std::wstring, std::wstring>> translationCache;
 int savedSize;
 

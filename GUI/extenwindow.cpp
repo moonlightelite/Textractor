@@ -18,7 +18,8 @@ extern const char* EXTEN_WINDOW_INSTRUCTIONS;
 namespace
 {
 	constexpr auto EXTEN_SAVE_FILE = u8"SavedExtensions.txt";
-	constexpr auto DEFAULT_EXTENSIONS = u8"Remove Repeated Characters>Remove Repeated Phrases>Regex Filter>Copy to Clipboard>Bing Translate>Extra Window>Extra Newlines";
+	//constexpr auto DEFAULT_EXTENSIONS = u8"Remove Repeated Characters>Remove Repeated Phrases>Regex Filter>Copy to Clipboard>Bing Translate>Extra Window>Extra Newlines";
+	constexpr auto DEFAULT_EXTENSIONS = u8"Remove Repeated Characters>Remove Repeated Phrases>Regex Filter>Copy to Clipboard>Baidu Translate>Extra Window>Extra Newlines";
 
 	struct Extension
 	{
