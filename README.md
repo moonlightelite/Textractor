@@ -6,9 +6,11 @@ Added Baidu Fanyi extension. Note that the extension uses Windows named pipe to 
 
 Textractor should be run with [Locale Emulator](https://pooi.moe/Locale-Emulator/) set to Chinese(Simplified), while the target application should be run with the Japanese Locale.
 
-The translation app BaiduTranslator should be run before Textractor to ensure the named pipe is setup. 
+The translation script BaiduTranslator should be run before Textractor to ensure the named pipe is setup. Run the script in daemon mode -d and wait until the script says 'Waiting for Client to connect.'
 
 If you change the extension To Language setting to something other than eng, when Textractor starts up, you might get an assertion error. Just press ignore. It's not going to affect the app.
+
+Try to make sure you are hooking the correct thread. Baidu Fanyi doesn't like it when you try to spam the servers with thousands of phrases in a short period of time...
 
 ##
 Original Textractor README page
