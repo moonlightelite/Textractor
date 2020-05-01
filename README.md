@@ -8,9 +8,13 @@ Textractor should be run with [Locale Emulator](https://pooi.moe/Locale-Emulator
 
 The translation script BaiduTranslator should be run before Textractor to ensure the named pipe is setup. Run the script in daemon mode -d and wait until the script says 'Waiting for Client to connect.'
 
-If you change the extension To Language setting to something other than eng, when Textractor starts up, you might get an assertion error. Just press ignore. It's not going to affect the app.
+Once the script is up and running, then you can start Textractor.
+
+If you change the extension To Language setting to something other than engish, when Textractor starts up, you might get an assertion error. Just press ignore. It's not going to affect the app.
 
 Try to make sure you are hooking the correct thread. Baidu Fanyi doesn't like it when you try to spam the servers with thousands of phrases in a short period of time...
+
+Finally, I wrote this fork mostly for my own usage. If you find use in this extension, then great. I won't be doing much maintainence on it.
 
 ##
 Original Textractor README page
